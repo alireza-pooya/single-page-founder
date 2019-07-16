@@ -1,0 +1,248 @@
+@import 'fonts';
+@import 'var';
+@import 'mixins';
+
+html {
+    height: 101%;
+}
+
+body {
+    font-family: 'IRANSans' !important;
+    text-align: right;
+    color: $secondaryColor;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+.text-brand {
+    color: $primaryColor;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    padding: 25px 0;
+
+    @include down-992 {
+        background: $secondaryColor;
+        position: static;
+    }
+}
+
+header {
+    position: relative;
+    min-height: 620px;
+
+    .header {
+        position: absolute;
+        z-index: 1;
+        top: 130px;
+
+        @include down-992 {
+            position: static;
+            margin-bottom: 80px;
+            background: $secondaryColor;
+            padding-top: 5px;
+            margin-top: -1px;
+        }
+    }
+
+    .headerSvg {
+        width: 100%;
+        margin-top: -9%;
+        fill: $secondaryColor;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: flex-start;
+
+        @media (min-width: 1500px) {
+            margin-top: -15%;
+        }
+
+        @media (min-width: 2000px) {
+            margin-top: -20%;
+        }
+
+        @include down-992 {
+            position: static;
+            margin-top: -300px;
+        }
+
+        @include down-768 {
+            position: static;
+            margin-top: -250px;
+        }
+
+        @include down-568 {
+            position: static;
+            margin-top: -150px;
+        }
+    }
+}
+
+.formBox {
+    background: #fff;
+    border-radius: $radius;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba($secondaryColor, .1);
+    border: 1px solid rgba($secondaryColor, .15);
+
+
+    @include down-568 {
+        padding: 20px 15px;
+    }
+
+    &Title {
+        font-weight: bold;
+        color: $primaryColor;
+    }
+
+}
+
+.poster {
+    height: 440px;
+    border-radius: $radius;
+    display: block;
+    box-shadow: 0 10px 25px rgba($secondaryColor, .4);
+
+    @include down-992 {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+}
+
+.teacher {
+    display: flex;
+    align-items: center;
+
+    &Avatar {
+        @include eqsize(80px);
+        min-width: 80px;
+        overflow: hidden;
+        border-radius: 100%;
+        box-shadow: 0 15px 20px rgba($secondaryColor, .1), 0 0 0 5px rgba($primaryColor, .2);
+        @include imgCover
+    }
+}
+
+.aboutWebinar {
+    font-size: 18px;
+    line-height: 30px
+}
+
+
+@keyframes beatHeart {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+footer {
+    background-color: $secondaryColor;
+    color: #fff;
+    padding: 20px 0 50px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .fa-heart {
+        animation: 1s infinite beatHeart;
+    }
+
+
+    .socialLinks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 100%;
+            margin: 0 10px;
+            font-size: 22px;
+            transition: $trans;
+
+            svg {
+                width: 29px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                opacity: .5;
+            }
+        }
+    }
+}
+
+.form-control {
+    height: 55px;
+
+    &:focus {
+        box-shadow: 0 0 0 1px $navyColor;
+        border-color: $navyColor
+    }
+
+}
+
+.float-form-group {
+    position: relative;
+    margin-bottom: 30px;
+
+    label {
+        position: absolute;
+        right: 10px;
+        top: -15px;
+        color: rgb(172, 172, 172);
+        background: #fff;
+        padding: 0 10px;
+        transition: $trans;
+        cursor: text;
+    }
+
+    input {
+        &:focus {
+            + label {
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #4dba64 0%, $primaryColor 100%);
+    border: 0;
+    padding: 13px 25px;
+    transition: $trans;
+
+    &:hover {
+        box-shadow: 0 0 0 4px rgba($primaryColor, .2);
+    }
+}

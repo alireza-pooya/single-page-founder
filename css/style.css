@@ -1,0 +1,384 @@
+/*
+IRAN Sans-serif fonts are considered a proprietary software. To gain
+information about the laws regarding the use of these fonts, please
+visit www.fontiran.com
+---------------------------------------------------------------------
+This set of fonts are used in this project under the license: (8BAEAY)
+---------------------------------------------------------------------
+*/
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+html {
+  height: 101%;
+}
+
+body {
+  font-family: 'IRANSans' !important;
+  text-align: right;
+  color: #141424;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-brand {
+  color: #25a06f;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    background: #141424;
+    position: static;
+  }
+}
+
+header {
+  position: relative;
+  min-height: 620px;
+}
+
+header .header {
+  position: absolute;
+  z-index: 1;
+  top: 130px;
+}
+
+@media screen and (max-width: 992px) {
+  header .header {
+    position: static;
+    margin-bottom: 80px;
+    background: #141424;
+    padding-top: 5px;
+    margin-top: -1px;
+  }
+}
+
+header .headerSvg {
+  width: 100%;
+  margin-top: -9%;
+  fill: #141424;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 1500px) {
+  header .headerSvg {
+    margin-top: -15%;
+  }
+}
+
+@media (min-width: 2000px) {
+  header .headerSvg {
+    margin-top: -20%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .headerSvg {
+    position: static;
+    margin-top: -300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .headerSvg {
+    position: static;
+    margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  header .headerSvg {
+    position: static;
+    margin-top: -150px;
+  }
+}
+
+.formBox {
+  background: #fff;
+  border-radius: 5px;
+  padding: 35px;
+  -webkit-box-shadow: 0 10px 25px rgba(20, 20, 36, 0.1);
+          box-shadow: 0 10px 25px rgba(20, 20, 36, 0.1);
+  border: 1px solid rgba(20, 20, 36, 0.15);
+}
+
+@media screen and (max-width: 568px) {
+  .formBox {
+    padding: 20px 15px;
+  }
+}
+
+.formBoxTitle {
+  font-weight: bold;
+  color: #25a06f;
+}
+
+.poster {
+  height: 440px;
+  border-radius: 5px;
+  display: block;
+  -webkit-box-shadow: 0 10px 25px rgba(20, 20, 36, 0.4);
+          box-shadow: 0 10px 25px rgba(20, 20, 36, 0.4);
+}
+
+@media screen and (max-width: 992px) {
+  .poster {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+}
+
+.teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teacherAvatar {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 15px 20px rgba(20, 20, 36, 0.1), 0 0 0 5px rgba(37, 160, 111, 0.2);
+          box-shadow: 0 15px 20px rgba(20, 20, 36, 0.1), 0 0 0 5px rgba(37, 160, 111, 0.2);
+}
+
+.teacherAvatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutWebinar {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@-webkit-keyframes beatHeart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes beatHeart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+footer {
+  background-color: #141424;
+  color: #fff;
+  padding: 20px 0 50px 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fa-heart {
+  -webkit-animation: 1s infinite beatHeart;
+          animation: 1s infinite beatHeart;
+}
+
+footer .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .socialLinks a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 100%;
+  margin: 0 10px;
+  font-size: 22px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+footer .socialLinks a svg {
+  width: 29px;
+}
+
+footer .socialLinks a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+.form-control {
+  height: 55px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 1px #696983;
+          box-shadow: 0 0 0 1px #696983;
+  border-color: #696983;
+}
+
+.float-form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.float-form-group label {
+  position: absolute;
+  right: 10px;
+  top: -15px;
+  color: #acacac;
+  background: #fff;
+  padding: 0 10px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  cursor: text;
+}
+
+.float-form-group input:focus + label {
+  color: #141424;
+}
+
+.btn-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#4dba64), to(#25a06f));
+  background: linear-gradient(90deg, #4dba64 0%, #25a06f 100%);
+  border: 0;
+  padding: 13px 25px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.btn-gradient:hover {
+  -webkit-box-shadow: 0 0 0 4px rgba(37, 160, 111, 0.2);
+          box-shadow: 0 0 0 4px rgba(37, 160, 111, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
